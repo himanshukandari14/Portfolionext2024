@@ -8,7 +8,7 @@ export default withSentryConfig(nextConfig, {
 
 // Suppresses source map uploading logs during build
 silent: true,
-org: "javascript-mastery",
+org: "Himanshu",
 project: "javascript-nextjs",
 }, {
 // For all available options, see:
@@ -35,6 +35,6 @@ disableLogger: true,
 // Enables automatic instrumentation of Vercel Cron Monitors.
 // See the following for more information:
 // https://docs.sentry.io/product/crons/
-// https://vercel.com/docs/cron-jobs
+
 automaticVercelMonitors: true,
 });
