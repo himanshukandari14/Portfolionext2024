@@ -72,6 +72,14 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "Funpump",
+    des: "A Decentralised memecoin launchpad application.",
+    img: "/pumpfun.png",
+    iconLists: ["/sol.svg", "/Hardhat.svg", "/re.svg", "/ts.svg"],
+    link: "https://funpump-eight.vercel.app/",
+  },
+  {
+    id: 2,
     title: "No Proxy",
     des: "Automate the Attendance system with AI face detection in Next js",
     img: "/noproxy.png",
@@ -79,7 +87,7 @@ export const projects = [
     link: "https://noproxy.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "LiveDocs",
     des: "A real-time collaboration doccument tool with comment emoji's and thread and replies.",
     img: "/demo.png",
@@ -87,7 +95,7 @@ export const projects = [
     link: "https://livedocs-seven.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "CodeSync",
     des: "A modern Edtech platform for Students and Teachers to list course and buy.",
     img: "/codesync.png",
