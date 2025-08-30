@@ -1,15 +1,16 @@
 "use client";
 
 import { navItems } from "@/data";
+import dynamic from "next/dynamic";
 
-import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
-
 import Approach from "@/components/Approach";
-// import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+
+// ✅ Load Hero dynamically (prevents "document is not defined")
+const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
 
 const Home = () => {
   return (
@@ -19,7 +20,6 @@ const Home = () => {
         <Hero />
         <Grid />
         <RecentProjects />
-        
         {/* <Experience /> */}
         <Approach />
         <Footer />
